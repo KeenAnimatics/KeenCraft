@@ -508,8 +508,8 @@
     "version": "1.0.0",
     "description": "A mod the revamps mincraft\u0027s features and makes the game progression smoother",
     "author": "Keen_Animatics",
-    "websiteURL": "https://mcreator.net",
-    "license": "All Rights Reserved",
+    "websiteURL": "",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -519,7 +519,7 @@
       "allmods"
     ],
     "currentGenerator": "forge-1.18.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "Keen",
     "modElementsPackage": "net.mcreator.keen",
     "lockBaseModFiles": false
   },
