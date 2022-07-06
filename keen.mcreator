@@ -418,6 +418,49 @@
       "locked_code": false,
       "registry_name": "coal_ore_generator_gui_4",
       "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "TechnoBlade",
+      "type": "livingentity",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "techno_blade",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "TechnoBladeOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "techno_blade_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "TechnoBladeOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "techno_blade_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [],
@@ -429,7 +472,9 @@
       "block.keen.cobblestone_generator_4": "§6§o Cobblestone Generator Tier IV",
       "block.keen.coal_generator_2": "§9§o Iron Ore Generator Tier II",
       "block.keen.cobblestone_generator_block": "§8§o Cobblestone Generator Tier I",
+      "entity.keen.techno_blade": "§d[PIG§b+++§d] Technoblade",
       "block.keen.cobblestone_generator_block_2": "§9§o Cobblestone Generator Tier II",
+      "item.keen.techno_blade_spawn_egg": "§d[PIG§b+++§d] Technoblade Spawn Egg",
       "block.keen.coal_generator": "§8§o Coal Generator Tier I",
       "block.keen.cobblestone_generator_block_3": "§5§o Cobblestone Generator Tier III",
       "block.keen.iron_generator": "§8§o Iron Ore Generator Tier I",

@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.keen.init.KeenModTabs;
 import net.mcreator.keen.init.KeenModItems;
+import net.mcreator.keen.init.KeenModEntities;
 import net.mcreator.keen.init.KeenModBlocks;
 import net.mcreator.keen.init.KeenModBlockEntities;
 
@@ -49,7 +50,7 @@ public class KeenMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		KeenModBlocks.REGISTRY.register(bus);
 		KeenModItems.REGISTRY.register(bus);
-
+		KeenModEntities.REGISTRY.register(bus);
 		KeenModBlockEntities.REGISTRY.register(bus);
 
 	}

@@ -1,12 +1,12 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="All Rights Reserved"
+license="MIT License"
 
 [[mods]]
 modId="keen"
 version="1.0.0"
 displayName="KeenCraft"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="Keen"
 displayURL="https://mcreator.net"
 authors="Keen_Animatics"
 description='''
