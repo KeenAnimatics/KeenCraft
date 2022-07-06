@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "keen:blocks/cobblestone2",
+    "up": "keen:blocks/cobblestone2",
+    "north": "keen:blocks/cobblestonegenerator2",
+    "east": "keen:blocks/cobblestone2",
+    "south": "keen:blocks/cobblestone2",
+    "west": "keen:blocks/cobblestone2",
+    "particle": "keen:blocks/cobblestone2"
+  }
+}

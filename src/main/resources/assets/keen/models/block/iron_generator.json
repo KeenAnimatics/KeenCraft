@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "keen:blocks/iron1",
+    "up": "keen:blocks/iron1",
+    "north": "keen:blocks/ironoregenerator1",
+    "east": "keen:blocks/iron1",
+    "south": "keen:blocks/iron1",
+    "west": "keen:blocks/iron1",
+    "particle": "keen:blocks/iron1"
+  }
+}

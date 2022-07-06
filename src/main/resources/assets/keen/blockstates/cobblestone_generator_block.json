@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "keen:block/cobblestone_generator_block"
+    },
+    "facing=east": {
+      "model": "keen:block/cobblestone_generator_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "keen:block/cobblestone_generator_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "keen:block/cobblestone_generator_block",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "keen:block/cobblestone_generator_block",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "keen:block/cobblestone_generator_block",
+      "x": 90
+    }
+  }
+}

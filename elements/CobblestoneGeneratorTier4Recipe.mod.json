@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:CobblestoneGeneratorBlock3"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Blocks.NETHERITE_BLOCK"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:CobblestoneGenerator4"
+    },
+    "name": "cobblestone_generator_tier_4_recipe",
+    "namespace": "mod"
+  }
+}

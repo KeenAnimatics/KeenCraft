@@ -1,0 +1,527 @@
+{
+  "mod_elements": [
+    {
+      "name": "CobblestoneGeneratorGUI",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_gui",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "KeenCraft",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keen_craft"
+    },
+    {
+      "name": "CobblestoneGeneratorBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_block",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorTier1Recipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_tier_1_recipe",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorBlock2",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_block_2",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorBlock3",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_block_3",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGenerator4",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_4",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorTier2Recipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_tier_2_recipe",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorTier3Recipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_tier_3_recipe",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorTier4Recipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_tier_4_recipe",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "IronGenerator",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronOreGeneratorBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ore_generator_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "CobblestoneGeneratorGUI2",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_gui_2",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorGUI3",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_gui_3",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "CobblestoneGeneratorGUI4",
+      "type": "gui",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_generator_gui_4",
+      "path": "~/Generators/Mining/Cobblestone"
+    },
+    {
+      "name": "IronOreGeneratorGUI",
+      "type": "gui",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ore_generator_gui",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronOreGeneratorTier1Recipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ore_generator_tier_1_recipe",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronOreGeneratorTier2Recipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ore_generator_tier_2_recipe",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronGenerator2",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_2",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronGenerator3",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_3",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronGeneratorTier3Recipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_tier_3_recipe",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronGenerator4",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_4",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronGeneratorTier4Recipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_generator_tier_4_recipe",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronOreGeneratorGUI2",
+      "type": "gui",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ore_generator_gui_2",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronOreGeneratorGUI3",
+      "type": "gui",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ore_generator_gui_3",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "IronOreGeneratorGUI4",
+      "type": "gui",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ore_generator_gui_4",
+      "path": "~/Generators/Mining/Iron"
+    },
+    {
+      "name": "CoalGenerator",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalOreGeneratorBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_ore_generator_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalOreGeneratorGUI",
+      "type": "gui",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_ore_generator_gui",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalOreGeneratorTier1Recipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_ore_generator_tier_1_recipe",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalOreGeneratorTier2Recipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_ore_generator_tier_2_recipe",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalGenerator2",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator_2",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalGenerator3",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator_3",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalGeneratorTier3Recipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator_tier_3_recipe",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalGenerator4",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator_4",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalGeneratorTier4Recipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator_tier_4_recipe",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalOreGeneratorGUI2",
+      "type": "gui",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_ore_generator_gui_2",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalOreGeneratorGUI3",
+      "type": "gui",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_ore_generator_gui_3",
+      "path": "~/Generators/Mining/Coal"
+    },
+    {
+      "name": "CoalOreGeneratorGUI4",
+      "type": "gui",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_ore_generator_gui_4",
+      "path": "~/Generators/Mining/Coal"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.keen.coal_generator_4": "§6§o Iron Ore Generator Tier IV",
+      "block.keen.coal_generator_3": "§5§o Iron Ore Generator Tier III",
+      "block.keen.cobblestone_generator_4": "§6§o Cobblestone Generator Tier IV",
+      "block.keen.coal_generator_2": "§9§o Iron Ore Generator Tier II",
+      "block.keen.cobblestone_generator_block": "§8§o Cobblestone Generator Tier I",
+      "block.keen.cobblestone_generator_block_2": "§9§o Cobblestone Generator Tier II",
+      "block.keen.coal_generator": "§8§o Coal Generator Tier I",
+      "block.keen.cobblestone_generator_block_3": "§5§o Cobblestone Generator Tier III",
+      "block.keen.iron_generator": "§8§o Iron Ore Generator Tier I",
+      "block.keen.iron_generator_4": "§6§o Iron Ore Generator Tier IV",
+      "block.keen.iron_generator_3": "§5§o Iron Ore Generator Tier III",
+      "itemGroup.tabkeen_craft": "Keen Craft",
+      "block.keen.iron_generator_2": "§9§o Iron Ore Generator Tier II"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Generators",
+        "children": [
+          {
+            "name": "Mining",
+            "children": [
+              {
+                "name": "Iron",
+                "children": []
+              },
+              {
+                "name": "Cobblestone",
+                "children": []
+              },
+              {
+                "name": "Gold",
+                "children": []
+              },
+              {
+                "name": "Lapis",
+                "children": []
+              },
+              {
+                "name": "Redstone",
+                "children": []
+              },
+              {
+                "name": "Diamond",
+                "children": []
+              },
+              {
+                "name": "Ancient Debris",
+                "children": []
+              },
+              {
+                "name": "Coal",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Woodcutting",
+            "children": []
+          },
+          {
+            "name": "Farming",
+            "children": []
+          },
+          {
+            "name": "Ranching",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "keen",
+    "modName": "KeenCraft",
+    "version": "1.0.0",
+    "description": "A mod the revamps mincraft\u0027s features and makes the game progression smoother",
+    "author": "Keen_Animatics",
+    "websiteURL": "https://mcreator.net",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "allmods"
+    ],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.keen",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

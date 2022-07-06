@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "keen:cobblestone_generator_block",
+    "keen:cobblestone_generator_block_2",
+    "keen:cobblestone_generator_block_3",
+    "keen:cobblestone_generator_4",
+    "keen:iron_generator",
+    "keen:iron_generator_2",
+    "keen:iron_generator_3",
+    "keen:iron_generator_4",
+    "keen:coal_generator",
+    "keen:coal_generator_2",
+    "keen:coal_generator_3",
+    "keen:coal_generator_4"
+  ]
+}

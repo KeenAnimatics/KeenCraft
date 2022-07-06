@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "keen:block/iron_generator"
+    },
+    "facing=east": {
+      "model": "keen:block/iron_generator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "keen:block/iron_generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "keen:block/iron_generator",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "keen:block/iron_generator",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "keen:block/iron_generator",
+      "x": 90
+    }
+  }
+}
