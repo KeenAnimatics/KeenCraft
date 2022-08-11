@@ -426,7 +426,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "techno_blade",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Technoblade"
     },
     {
       "name": "TechnoBladeOnInitialEntitySpawn",
@@ -443,7 +443,7 @@
           }
         ]
       },
-      "path": "~/Mobs"
+      "path": "~/Mobs/Technoblade"
     },
     {
       "name": "TechnoBladeOnEntityTickUpdate",
@@ -460,17 +460,24 @@
           }
         ]
       },
-      "path": "~/Mobs"
+      "path": "~/Mobs/Technoblade"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "XPAmount",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "block.keen.coal_generator_4": "§6§o Iron Ore Generator Tier IV",
       "block.keen.coal_generator_3": "§5§o Iron Ore Generator Tier III",
-      "block.keen.cobblestone_generator_4": "§6§o Cobblestone Generator Tier IV",
       "block.keen.coal_generator_2": "§9§o Iron Ore Generator Tier II",
+      "block.keen.cobblestone_generator_4": "§6§o Cobblestone Generator Tier IV",
       "block.keen.cobblestone_generator_block": "§8§o Cobblestone Generator Tier I",
       "entity.keen.techno_blade": "§d[PIG§b+++§d] Technoblade",
       "block.keen.cobblestone_generator_block_2": "§9§o Cobblestone Generator Tier II",
@@ -543,6 +550,36 @@
       },
       {
         "name": "Mobs",
+        "children": [
+          {
+            "name": "Technoblade",
+            "children": []
+          },
+          {
+            "name": "BabyDragon",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Tools",
+        "children": [
+          {
+            "name": "katana",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Advancements",
         "children": []
       }
     ]

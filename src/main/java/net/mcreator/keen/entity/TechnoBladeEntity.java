@@ -195,11 +195,11 @@ public class TechnoBladeEntity extends Monster {
 		double z = this.getZ();
 		Entity entity = this;
 		Level world = this.level;
-		for (int l = 0; l < 8; ++l) {
-			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 2D;
-			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 2D * 100;
-			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 2D;
-			world.addParticle(ParticleTypes.ENCHANT, x0, y0, z0, 0, 0, 0);
+		for (int l = 0; l < 2; ++l) {
+			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 1D;
+			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 1D * 100;
+			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 1D;
+			world.addParticle(ParticleTypes.FLAME, x0, y0, z0, 0, 0, 0);
 		}
 	}
 

@@ -93,11 +93,11 @@
     },
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "ENCHANTMENT_TABLE"
+      "value": "FLAME"
     },
     "particleSpawningShape": "Tube",
-    "particleSpawningRadious": 2.0,
-    "particleAmount": 8,
+    "particleSpawningRadious": 1.0,
+    "particleAmount": 2,
     "onMobTickUpdate": {
       "name": "TechnoBladeOnEntityTickUpdate"
     },

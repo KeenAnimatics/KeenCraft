@@ -4,7 +4,7 @@
   "definition": {
     "name": "Keen Craft",
     "icon": {
-      "value": "Blocks.REDSTONE_BLOCK"
+      "value": "CUSTOM:CobblestoneGeneratorBlock3"
     },
     "showSearch": true
   }
