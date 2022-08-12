@@ -3,24 +3,28 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "keeniumalloykatana",
+    "texture": "keenium_pickaxe",
     "customModelName": "Normal",
-    "name": "Keenium Katana",
+    "name": "Keenium Pickaxe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:KeenCraft"
     },
-    "toolType": "Sword",
-    "harvestLevel": 0,
-    "efficiency": 2.0,
-    "attackSpeed": 2.0,
+    "toolType": "Pickaxe",
+    "harvestLevel": 5,
+    "efficiency": 15.0,
+    "attackSpeed": 1.0,
     "enchantability": 20,
-    "damageVsEntity": 6.0,
+    "damageVsEntity": 3.0,
     "usageCount": 3000,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
-    "immuneToFire": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:KeeniumAlloy"
+      }
+    ],
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

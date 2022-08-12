@@ -3,24 +3,28 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "goldkatana",
+    "texture": "keenium_sword",
     "customModelName": "Normal",
-    "name": "Gold Katana",
+    "name": "Keenium Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:KeenCraft"
     },
     "toolType": "Sword",
     "harvestLevel": 0,
-    "efficiency": 2.0,
-    "attackSpeed": 2.0,
-    "enchantability": 22,
-    "damageVsEntity": 2.0,
-    "usageCount": 32,
+    "efficiency": 9.0,
+    "attackSpeed": 1.6,
+    "enchantability": 20,
+    "damageVsEntity": 7.0,
+    "usageCount": 3000,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
-    "immuneToFire": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:KeeniumAlloy"
+      }
+    ],
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

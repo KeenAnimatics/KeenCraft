@@ -16,7 +16,14 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.keen.item.WoodenKatanaItem;
 import net.mcreator.keen.item.StoneKatanaItem;
+import net.mcreator.keen.item.NetheriteKatanaItem;
+import net.mcreator.keen.item.KeeniumSwordItem;
+import net.mcreator.keen.item.KeeniumShovelItem;
+import net.mcreator.keen.item.KeeniumPickaxeItem;
 import net.mcreator.keen.item.KeeniumKatanaItem;
+import net.mcreator.keen.item.KeeniumHoeItem;
+import net.mcreator.keen.item.KeeniumAxeItem;
+import net.mcreator.keen.item.KeeniumAlloyItem;
 import net.mcreator.keen.item.IronKatanaItem;
 import net.mcreator.keen.item.GoldKatanaItem;
 import net.mcreator.keen.item.DiamondKatanaItem;
@@ -47,6 +54,13 @@ public class KeenModItems {
 	public static final RegistryObject<Item> GOLD_KATANA = REGISTRY.register("gold_katana", () -> new GoldKatanaItem());
 	public static final RegistryObject<Item> DIAMOND_KATANA = REGISTRY.register("diamond_katana", () -> new DiamondKatanaItem());
 	public static final RegistryObject<Item> KEENIUM_KATANA = REGISTRY.register("keenium_katana", () -> new KeeniumKatanaItem());
+	public static final RegistryObject<Item> NETHERITE_KATANA = REGISTRY.register("netherite_katana", () -> new NetheriteKatanaItem());
+	public static final RegistryObject<Item> KEENIUM_ALLOY = REGISTRY.register("keenium_alloy", () -> new KeeniumAlloyItem());
+	public static final RegistryObject<Item> KEENIUM_SWORD = REGISTRY.register("keenium_sword", () -> new KeeniumSwordItem());
+	public static final RegistryObject<Item> KEENIUM_PICKAXE = REGISTRY.register("keenium_pickaxe", () -> new KeeniumPickaxeItem());
+	public static final RegistryObject<Item> KEENIUM_AXE = REGISTRY.register("keenium_axe", () -> new KeeniumAxeItem());
+	public static final RegistryObject<Item> KEENIUM_SHOVEL = REGISTRY.register("keenium_shovel", () -> new KeeniumShovelItem());
+	public static final RegistryObject<Item> KEENIUM_HOE = REGISTRY.register("keenium_hoe", () -> new KeeniumHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

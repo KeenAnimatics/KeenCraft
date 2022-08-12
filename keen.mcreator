@@ -515,6 +515,69 @@
       "locked_code": false,
       "registry_name": "keenium_katana",
       "path": "~/Tools/Alloy"
+    },
+    {
+      "name": "NetheriteKatana",
+      "type": "tool",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_katana",
+      "path": "~/Tools/Netherite"
+    },
+    {
+      "name": "KeeniumAlloy",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_alloy",
+      "path": "~/Items"
+    },
+    {
+      "name": "KeeniumSword",
+      "type": "tool",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_sword",
+      "path": "~/Tools/Alloy"
+    },
+    {
+      "name": "KeeniumPickaxe",
+      "type": "tool",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_pickaxe",
+      "path": "~/Tools/Alloy"
+    },
+    {
+      "name": "KeeniumAxe",
+      "type": "tool",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_axe",
+      "path": "~/Tools/Alloy"
+    },
+    {
+      "name": "KeeniumShovel",
+      "type": "tool",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_shovel",
+      "path": "~/Tools/Alloy"
+    },
+    {
+      "name": "KeeniumHoe",
+      "type": "tool",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_hoe",
+      "path": "~/Tools/Alloy"
     }
   ],
   "variable_elements": [
@@ -528,27 +591,34 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.keen.diamond_katana": "Wooden Katana",
+      "item.keen.keenium_pickaxe": "Keenium Pickaxe",
+      "block.keen.cobblestone_generator_4": "§6§o Cobblestone Generator Tier IV",
+      "item.keen.keenium_shovel": "Keenium Shovel",
+      "block.keen.cobblestone_generator_block": "§8§o Cobblestone Generator Tier I",
+      "item.keen.stone_katana": "Stone Katana",
+      "block.keen.cobblestone_generator_block_2": "§9§o Cobblestone Generator Tier II",
+      "block.keen.coal_generator": "§8§o Coal Generator Tier I",
+      "block.keen.cobblestone_generator_block_3": "§5§o Cobblestone Generator Tier III",
+      "item.keen.wooden_katana": "Wooden Katana",
+      "item.keen.diamond_katana": "Diamond Katana",
+      "item.keen.keenium_sword": "Keenium Sword",
       "block.keen.coal_generator_4": "§6§o Iron Ore Generator Tier IV",
       "block.keen.coal_generator_3": "§5§o Iron Ore Generator Tier III",
       "block.keen.coal_generator_2": "§9§o Iron Ore Generator Tier II",
-      "block.keen.cobblestone_generator_4": "§6§o Cobblestone Generator Tier IV",
-      "item.keen.iron_katana": "Wooden Katana",
-      "block.keen.cobblestone_generator_block": "§8§o Cobblestone Generator Tier I",
+      "item.keen.iron_katana": "Iron Katana",
+      "item.keen.keenium_hoe": "Keenium Hoe",
       "entity.keen.techno_blade": "§d[PIG§b+++§d] Technoblade",
-      "block.keen.cobblestone_generator_block_2": "§9§o Cobblestone Generator Tier II",
       "item.keen.techno_blade_spawn_egg": "§d[PIG§b+++§d] Technoblade Spawn Egg",
-      "item.keen.stone_katana": "Wooden Katana",
-      "block.keen.coal_generator": "§8§o Coal Generator Tier I",
-      "block.keen.cobblestone_generator_block_3": "§5§o Cobblestone Generator Tier III",
-      "item.keen.keenium_katana": "Wooden Katana",
-      "item.keen.gold_katana": "Wooden Katana",
-      "item.keen.wooden_katana": "Wooden Katana",
+      "item.keen.netherite_katana": "Netherite Katana",
+      "item.keen.keenium_katana": "Keenium Katana",
+      "item.keen.gold_katana": "Gold Katana",
       "block.keen.iron_generator": "§8§o Iron Ore Generator Tier I",
       "block.keen.iron_generator_4": "§6§o Iron Ore Generator Tier IV",
       "block.keen.iron_generator_3": "§5§o Iron Ore Generator Tier III",
+      "item.keen.keenium_alloy": "Keenium Alloy",
       "itemGroup.tabkeen_craft": "Keen Craft",
-      "block.keen.iron_generator_2": "§9§o Iron Ore Generator Tier II"
+      "block.keen.iron_generator_2": "§9§o Iron Ore Generator Tier II",
+      "item.keen.keenium_axe": "Keenium Pickaxe"
     }
   },
   "foldersRoot": {
@@ -614,10 +684,6 @@
           {
             "name": "Technoblade",
             "children": []
-          },
-          {
-            "name": "BabyDragon",
-            "children": []
           }
         ]
       },
@@ -650,6 +716,10 @@
           },
           {
             "name": "Alloy",
+            "children": []
+          },
+          {
+            "name": "Netherite",
             "children": []
           }
         ]

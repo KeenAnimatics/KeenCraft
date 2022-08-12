@@ -7,21 +7,27 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.common.ForgeMod;
 
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -38,6 +44,7 @@ import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.Difficulty;
+import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
@@ -75,11 +82,49 @@ public class TechnoBladeEntity extends Monster {
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.TOTEM_OF_UNDYING));
+		this.setPathfindingMalus(BlockPathTypes.WATER, 0);
+		this.moveControl = new MoveControl(this) {
+			@Override
+			public void tick() {
+				if (TechnoBladeEntity.this.isInWater())
+					TechnoBladeEntity.this.setDeltaMovement(TechnoBladeEntity.this.getDeltaMovement().add(0, 0.005, 0));
+				if (this.operation == MoveControl.Operation.MOVE_TO && !TechnoBladeEntity.this.getNavigation().isDone()) {
+					double dx = this.wantedX - TechnoBladeEntity.this.getX();
+					double dy = this.wantedY - TechnoBladeEntity.this.getY();
+					double dz = this.wantedZ - TechnoBladeEntity.this.getZ();
+					float f = (float) (Mth.atan2(dz, dx) * (double) (180 / Math.PI)) - 90;
+					float f1 = (float) (this.speedModifier * TechnoBladeEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
+					TechnoBladeEntity.this.setYRot(this.rotlerp(TechnoBladeEntity.this.getYRot(), f, 10));
+					TechnoBladeEntity.this.yBodyRot = TechnoBladeEntity.this.getYRot();
+					TechnoBladeEntity.this.yHeadRot = TechnoBladeEntity.this.getYRot();
+					if (TechnoBladeEntity.this.isInWater()) {
+						TechnoBladeEntity.this.setSpeed((float) TechnoBladeEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
+						float f2 = -(float) (Mth.atan2(dy, (float) Math.sqrt(dx * dx + dz * dz)) * (180 / Math.PI));
+						f2 = Mth.clamp(Mth.wrapDegrees(f2), -85, 85);
+						TechnoBladeEntity.this.setXRot(this.rotlerp(TechnoBladeEntity.this.getXRot(), f2, 5));
+						float f3 = Mth.cos(TechnoBladeEntity.this.getXRot() * (float) (Math.PI / 180.0));
+						TechnoBladeEntity.this.setZza(f3 * f1);
+						TechnoBladeEntity.this.setYya((float) (f1 * dy));
+					} else {
+						TechnoBladeEntity.this.setSpeed(f1 * 0.05F);
+					}
+				} else {
+					TechnoBladeEntity.this.setSpeed(0);
+					TechnoBladeEntity.this.setYya(0);
+					TechnoBladeEntity.this.setZza(0);
+				}
+			}
+		};
 	}
 
 	@Override
 	public Packet<?> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
+	}
+
+	@Override
+	protected PathNavigation createNavigation(Level world) {
+		return new WaterBoundPathNavigation(this, world);
 	}
 
 	@Override
@@ -166,6 +211,21 @@ public class TechnoBladeEntity extends Monster {
 	}
 
 	@Override
+	public boolean canBreatheUnderwater() {
+		return true;
+	}
+
+	@Override
+	public boolean checkSpawnObstruction(LevelReader world) {
+		return world.isUnobstructed(this);
+	}
+
+	@Override
+	public boolean isPushedByFluid() {
+		return false;
+	}
+
+	@Override
 	public boolean canChangeDimensions() {
 		return false;
 	}
@@ -216,6 +276,7 @@ public class TechnoBladeEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
+		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0.3);
 		return builder;
 	}
 }
