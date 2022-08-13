@@ -23,6 +23,7 @@ import net.mcreator.keen.item.KeeniumPickaxeItem;
 import net.mcreator.keen.item.KeeniumKatanaItem;
 import net.mcreator.keen.item.KeeniumHoeItem;
 import net.mcreator.keen.item.KeeniumAxeItem;
+import net.mcreator.keen.item.KeeniumArmorItem;
 import net.mcreator.keen.item.KeeniumAlloyItem;
 import net.mcreator.keen.item.IronKatanaItem;
 import net.mcreator.keen.item.GoldKatanaItem;
@@ -61,6 +62,12 @@ public class KeenModItems {
 	public static final RegistryObject<Item> KEENIUM_AXE = REGISTRY.register("keenium_axe", () -> new KeeniumAxeItem());
 	public static final RegistryObject<Item> KEENIUM_SHOVEL = REGISTRY.register("keenium_shovel", () -> new KeeniumShovelItem());
 	public static final RegistryObject<Item> KEENIUM_HOE = REGISTRY.register("keenium_hoe", () -> new KeeniumHoeItem());
+	public static final RegistryObject<Item> KEENIUM_ARMOR_HELMET = REGISTRY.register("keenium_armor_helmet", () -> new KeeniumArmorItem.Helmet());
+	public static final RegistryObject<Item> KEENIUM_ARMOR_CHESTPLATE = REGISTRY.register("keenium_armor_chestplate",
+			() -> new KeeniumArmorItem.Chestplate());
+	public static final RegistryObject<Item> KEENIUM_ARMOR_LEGGINGS = REGISTRY.register("keenium_armor_leggings",
+			() -> new KeeniumArmorItem.Leggings());
+	public static final RegistryObject<Item> KEENIUM_ARMOR_BOOTS = REGISTRY.register("keenium_armor_boots", () -> new KeeniumArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -4,9 +4,11 @@ package net.mcreator.keen.item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 import net.mcreator.keen.init.KeenModTabs;
+import net.mcreator.keen.init.KeenModItems;
 
 public class KeeniumKatanaItem extends SwordItem {
 	public KeeniumKatanaItem() {
@@ -32,8 +34,8 @@ public class KeeniumKatanaItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of(new ItemStack(KeenModItems.KEENIUM_ALLOY.get()));
 			}
-		}, 3, -2f, new Item.Properties().tab(KeenModTabs.TAB_KEEN_CRAFT));
+		}, 3, -2f, new Item.Properties().tab(KeenModTabs.TAB_KEEN_CRAFT).fireResistant());
 	}
 }

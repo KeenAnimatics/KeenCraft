@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "keen:keenium_alloy"
+  },
+  "result": {
+    "item": "keen:keenium_sword"
+  }
+}

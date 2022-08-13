@@ -578,6 +578,138 @@
       "locked_code": false,
       "registry_name": "keenium_hoe",
       "path": "~/Tools/Alloy"
+    },
+    {
+      "name": "KeeniumRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "WoodenKatanaRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_katana_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "StoneKatanaRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_katana_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "IronKatanaRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_katana_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "GoldKatanaRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_katana_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "DiamondKatanaRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_katana_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "NetheriteKatanaRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_katana_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "KeeniumKatanaRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_katana_recipe",
+      "path": "~/Tools/Alloy/Recipes"
+    },
+    {
+      "name": "KeeniumArmor",
+      "type": "armor",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor/Keenium"
+    },
+    {
+      "name": "KeeniumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_armor_helmet_recipe",
+      "path": "~/Armor/Keenium"
+    },
+    {
+      "name": "KeeniumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_armor_body_recipe",
+      "path": "~/Armor/Keenium"
+    },
+    {
+      "name": "KeeniumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_armor_leggings_recipe",
+      "path": "~/Armor/Keenium"
+    },
+    {
+      "name": "KeeniumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_armor_boots_recipe",
+      "path": "~/Armor/Keenium"
+    },
+    {
+      "name": "KeeniumSwordRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keenium_sword_recipe",
+      "path": "~/Tools/Alloy/Recipes"
     }
   ],
   "variable_elements": [
@@ -595,16 +727,20 @@
       "block.keen.cobblestone_generator_4": "§6§o Cobblestone Generator Tier IV",
       "item.keen.keenium_shovel": "Keenium Shovel",
       "block.keen.cobblestone_generator_block": "§8§o Cobblestone Generator Tier I",
-      "item.keen.stone_katana": "Stone Katana",
       "block.keen.cobblestone_generator_block_2": "§9§o Cobblestone Generator Tier II",
+      "item.keen.stone_katana": "Stone Katana",
       "block.keen.coal_generator": "§8§o Coal Generator Tier I",
       "block.keen.cobblestone_generator_block_3": "§5§o Cobblestone Generator Tier III",
       "item.keen.wooden_katana": "Wooden Katana",
+      "item.keen.keenium_armor_chestplate": "Keenium Chestplate",
+      "item.keen.keenium_armor_leggings": "Keenium Leggings",
       "item.keen.diamond_katana": "Diamond Katana",
       "item.keen.keenium_sword": "Keenium Sword",
+      "item.keen.keenium_armor_helmet": "Keenium Helmet",
       "block.keen.coal_generator_4": "§6§o Iron Ore Generator Tier IV",
       "block.keen.coal_generator_3": "§5§o Iron Ore Generator Tier III",
       "block.keen.coal_generator_2": "§9§o Iron Ore Generator Tier II",
+      "item.keen.keenium_armor_boots": "Keenium Boots",
       "item.keen.iron_katana": "Iron Katana",
       "item.keen.keenium_hoe": "Keenium Hoe",
       "entity.keen.techno_blade": "§d[PIG§b+++§d] Technoblade",
@@ -716,7 +852,12 @@
           },
           {
             "name": "Alloy",
-            "children": []
+            "children": [
+              {
+                "name": "Recipes",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Netherite",
@@ -726,7 +867,12 @@
       },
       {
         "name": "Armor",
-        "children": []
+        "children": [
+          {
+            "name": "Keenium",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Advancements",
